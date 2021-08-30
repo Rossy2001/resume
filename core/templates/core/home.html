@@ -1,0 +1,32 @@
+
+{% extends 'core/base.html'%}
+{% load static %}
+{% block content %}
+<div class='mt-5 '>
+<div class='text-center'>
+<img src="{% static 'core/images/pic3.jpeg' %}" alt='profile-pic' class='img-thumbnail'
+ width='250px' height='150px'>
+ </div>
+<div class='mt-5 text-white mx-5 '>
+<h1 class='font-weight-bold st-font'>Hello,</h1>
+<div class=' px-4' style='line-height:2rem;'>
+<p align="justify" style='text-indent:100px;'> 
+I am <b class='text-warning'>ROSE ANTO </b>. A self-motivated and independent individual who is currently pursuing 
+second year Bachelor of Technology (B.Tech) in ComputerScience and Engineering. A focused and adaptable team player
+who has gained some experience in working with building the real world projects.
+</p>
+ <p align="justify">A Hardworking and diligent computer science student with proven leadership capabilities who likes
+  to take initiative, seek out new challenges and want to gain the real world experience. Looking to leverage industry
+   skills and abilities of raising awareness  to build interactive and user-centered website designs to scale.
+  </p>
+
+</div>
+</div>
+<div class="text-center">
+<a href="{% url 'contact' %}" class='btn btn-outline-warning my-3 ms-4'>Hire Me</a>
+<a href=" {% url 'contact' %}" class='btn btn-outline-info my-3 ms-4'>Contact</a>
+</div>
+</div>
+{% endblock content %}
+        
+    
